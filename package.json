@@ -1,0 +1,28 @@
+{
+  "name": "paullegere-portfolio",
+  "version": "1.0.0",
+  "description": "Portfolio website for Technical Product Designer Paul Legere.",
+  "scripts": {
+    "sass": "sass --watch app/scss/style.scss:dist/style.css",
+    "build": "sass app/scss/style.scss:dist/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mash300/paullegere-portfolio.git"
+  },
+  "keywords": [
+    "portfolio",
+    "product-design",
+    "frontend"
+  ],
+  "author": "Paul Legere",
+  "license": "MIT",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/mash300/paullegere-portfolio/issues"
+  },
+  "homepage": "https://github.com/mash300/paullegere-portfolio#readme",
+  "devDependencies": {
+    "sass": "^1.100.0"
+  }
+}

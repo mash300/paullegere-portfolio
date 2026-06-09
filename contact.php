@@ -144,7 +144,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
     <div class="header__links hide-for-mobile">
       <a href="index.html">Home</a>
-      <a href="/#hero">About</a>
+      <a href="/about.html">About</a>
       <a href="/index.html#case_studies">Case Studies</a>
       <a href="      
 ">Contact</a>
@@ -156,7 +156,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
   <div class="header__menu has-fade">
     <a href="index.html">Home</a>
     <!-- <a href="index.html">Process</a> -->
-    <a href="/#hero">About</a>
+    <a href="/about.html">About</a>
     <a href="/index.html#case_studies">Case Studies</a>
     <a href="/contact.php">Contact</a>
     <a href="#" style="visibility: hidden;">Link</a>
@@ -201,7 +201,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
   
     <div class="footer__links col1">
       <a href="index.html">Home</a>
-      <a href="/#hero">About</a>
+      <a href="/about.html">About</a>
     </div>
     
     <div class="footer__links col2">
@@ -295,7 +295,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
     <div class="footer__links col1">
       <a href="index.html">Home</a>
-      <a href="/#hero">About</a>
+      <a href="/about.html">About</a>
     </div>
     
     <div class="footer__links col2">
