@@ -1,0 +1,398 @@
+
+/* The Green Company Styles */
+.greenPreview img{
+    width: 100%;
+    height: auto;
+    border-radius: 6px;
+    box-shadow: 0px 3px 12px rgb(0 0 0 / 20%);
+}
+
+.tgc_logo img{
+    width: 50%;
+    height: auto;
+    border-radius: 6px;
+    box-shadow: 0px 3px 12px rgb(0 0 0 / 20%);
+    color: white; 
+    text-align: center; 
+    margin-bottom: 25px;
+}
+
+.tgc_leaf img{
+    max-width: 30%;
+    height: auto;
+    border-radius: 6px;
+    box-shadow: 0px 3px 12px rgb(0 0 0 / 20%);
+    color: white; 
+    text-align: center; 
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 80px;
+}
+
+.tgcStyleGuide {
+    background: url(/images/TheGreenCompany_StyleGuide.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 250px;
+    height: 520px;
+    border-radius: 6px;
+    box-shadow: 0px 3px 12px rgb(0 0 0 / 20%);
+    background-color: rgb(0, 110, 255); 
+    color: white; 
+    text-align: center; 
+    margin: auto;
+}
+
+.tgc_wireframe_1 {
+    background-color: rgb(93, 156, 42); width: 450px; 
+    background-size: cover;
+    height: 500px; 
+    border-radius: 6px;
+    box-shadow: 0px 3px 12px rgb(0 0 0 / 20%);
+    color: white; 
+    text-align: center; 
+    margin: auto;
+}
+
+.tgc_wireframe_2 {
+    background-color: rgb(42, 137, 156); width: 450px; 
+    background-size: cover;
+    height: 500px; 
+    border-radius: 6px;
+    box-shadow: 0px 3px 12px rgb(0 0 0 / 20%);
+    color: white; 
+    text-align: center; 
+    margin-bottom: 70px;
+}
+
+.tgc_product_1 img{
+    width: 100%;
+    height: auto;
+    border-radius: 6px;
+    box-shadow: 0px 3px 12px rgb(0 0 0 / 20%);
+    color: white; 
+    text-align: center; 
+    margin: auto;
+}
+
+.tgc_product_2 img{
+    width: 100%;
+    height: auto;
+    border-radius: 6px;
+    box-shadow: 0px 3px 12px rgb(0 0 0 / 20%);
+    color: white; 
+    text-align: center; 
+    margin: auto;
+}
+
+.tgc_product_3 img{
+    width: 100%;
+    height: auto;
+    border-radius: 6px;
+    box-shadow: 0px 3px 12px rgb(0 0 0 / 20%);
+    color: white; 
+    text-align: center; 
+    margin: auto;
+}
+
+/* Scien tAnalytics Styles */
+.scientPreview img{
+    width: 100%;
+    height: auto;
+    border-radius: 6px;
+    box-shadow: 0px 3px 12px rgb(0 0 0 / 20%);
+}
+
+.container--sides {
+    padding-right: 1.5rem;
+    padding-left: 1.5rem;
+  }
+
+.RGTECH_hero img{
+    width: 100%;
+    height: auto;
+    border-radius: 6px;
+    box-shadow: 0px 3px 12px rgb(0 0 0 / 20%);
+    color: white; 
+    text-align: center; 
+}
+
+/* Resson Styles */
+.ressonPreview img{
+    width: 100%;
+    height: auto;
+    border-radius: 6px;
+    box-shadow: 0px 3px 12px rgb(0 0 0 / 20%);
+    color: white; 
+    text-align: center; 
+    /* margin-bottom: 70px; */
+}
+
+.rtech_product_1 {
+    background: url(/images/RGTECH_landing.jpg);
+    background-size: cover;
+    object-fit: contain;
+    background-repeat: no-repeat;
+    height: 969px; 
+    width: 480px;
+    border-radius: 6px;
+    box-shadow: 0px 3px 12px rgb(0 0 0 / 20%);
+    color: white; 
+    text-align: center; 
+    margin: auto;
+}
+
+.rtech_product_2 {
+    background: url(/images/RGTECH_about.jpg);
+    background-size: cover;
+    object-fit: contain;
+    background-repeat: no-repeat;
+    height: 1174px; 
+    width: 480px;
+    border-radius: 6px;
+    box-shadow: 0px 3px 12px rgb(0 0 0 / 20%);
+    color: white; 
+    text-align: center; 
+    margin: auto;
+}
+
+.rtech_product_3 {
+    background: url(/images/RGTECH_tech.jpg);
+    background-size: cover;
+    object-fit: contain;
+    background-repeat: no-repeat;
+    height: 1505px; 
+    width: 480px;
+    border-radius: 6px;
+    box-shadow: 0px 3px 12px rgb(0 0 0 / 20%);
+    color: white; 
+    text-align: center; 
+    margin: auto;
+}
+
+.rtech_product_4 {
+    background: url(/images/RGTECH_articles.jpg);
+    background-size: cover;
+    object-fit: contain;
+    background-repeat: no-repeat;
+    height: 846px; 
+    width: 480px;
+    border-radius: 6px;
+    box-shadow: 0px 3px 12px rgb(0 0 0 / 20%);
+    color: white; 
+    text-align: center; 
+    margin: auto;
+}
+
+.rtech_product_5 {
+    background: url(/images/RGTECH_article.jpg);
+    background-size: cover;
+    object-fit: contain;
+    background-repeat: no-repeat;
+    height: 565px; 
+    width: 480px;
+    border-radius: 6px;
+    box-shadow: 0px 3px 12px rgb(0 0 0 / 20%);
+    color: white; 
+    text-align: center; 
+    margin: auto;
+}
+
+.rtech_product_6 {
+    background: url(/images/RGTECH_contact.jpg);
+    background-size: cover;
+    object-fit: contain;
+    background-repeat: no-repeat;
+    height: 818px; 
+    width: 480px;
+    border-radius: 6px;
+    box-shadow: 0px 3px 12px rgb(0 0 0 / 20%);
+    color: white; 
+    text-align: center; 
+    margin: auto;
+}
+
+.r_prototype img{
+    width: 100%;
+    height:auto;
+    border-radius: 6px;
+    box-shadow: 0px 3px 12px rgb(0 0 0 / 20%);
+    color: white; 
+    text-align: center; 
+    /* margin-bottom: 70px; */
+}
+
+.rtechStyleGuide {
+    background: url(/images/Resson_Website_StyleGuide_2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 250px;
+    height: 520px;
+    border-radius: 6px;
+    box-shadow: 0px 3px 12px rgb(0 0 0 / 20%);
+    background-color: rgb(0, 110, 255); 
+    color: white; 
+    text-align: center; 
+    margin: auto;
+}
+
+
+.r_logo {
+    background: url(/images/r_logo.jpg);
+    background-size: cover;
+    width: 500px; 
+    height: 275px;    
+    border-radius: 6px;
+    box-shadow: 0px 3px 12px rgb(0 0 0 / 20%);
+    color: white; 
+    text-align: center; 
+    margin-bottom: 25px;
+}
+
+.r_trgl {
+    background: url(/images/r_trgl.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 250px; 
+    height: 250px; 
+    border-radius: 6px;
+    box-shadow: 0px 3px 12px rgb(0 0 0 / 20%);
+    color: white; 
+    text-align: center; 
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 80px;
+}
+
+/* BI Styles */
+
+
+
+.BI_hero img{
+    width: 100%;
+    height: auto;
+    border-radius: 6px;
+    box-shadow: 0px 3px 12px rgb(0 0 0 / 20%);
+    color: white; 
+    text-align: center; 
+}
+
+.BI_ideation img{
+    width: 75%;
+    height: auto;
+    border-radius: 6px;
+    box-shadow: 0px 3px 12px rgb(0 0 0 / 20%);
+    color: white; 
+    text-align: center; 
+}
+
+/* Binogi Styles */
+
+
+
+.BINOGI_hero img{
+    width: 100%;
+    height: auto;
+    border-radius: 6px;
+    box-shadow: 0px 3px 12px rgb(0 0 0 / 20%);
+    color: white; 
+    text-align: center; 
+}
+
+
+.binogiPreview img{
+    width: 100%;
+    height: auto; 
+    border-radius: 6px;
+    box-shadow: 0px 3px 12px rgb(0 0 0 / 20%);
+    color: white; 
+    text-align: center; 
+    /* margin-bottom: 70px; */
+}
+
+.flux_prototype img{
+    width: 100%;
+    height:auto;
+    border-radius: 6px;
+    box-shadow: 0px 3px 12px rgb(0 0 0 / 20%);
+    color: white; 
+    text-align: center; 
+    /* margin-bottom: 70px; */
+}
+
+.flux_userflow img{
+    width: 100%;
+    height:auto;
+    border-radius: 6px;
+    box-shadow: 0px 3px 12px rgb(0 0 0 / 20%);
+    color: white; 
+    text-align: center; 
+    /* margin-bottom: 70px; */
+}
+
+
+/* Contact Form Styles */
+
+.contact-hero {
+    display: flex;
+    width: 100%;
+    height: auto;
+    gap: 10vw;
+    margin-top: 60px;
+    margin-bottom: 5vh;
+    border-radius: 6px;
+    /* background-color: rgba(17, 17, 17, 0.069); */
+}
+
+.contact-heading {
+    font-size: 65px;
+}
+
+input[type=text], select, textarea {
+    width: 100%; /* Full width */
+    padding: 12px; /* Some padding */ 
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    /* margin-top: 6px;
+    margin-bottom: 16px; */
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+ }
+
+#message {
+    min-height: 20svh;
+}
+
+ input[type=email], select, textarea {
+    width: 100%; /* Full width */
+    padding: 12px; /* Some padding */ 
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    /* margin-top: 6px;
+    margin-bottom: 16px; */
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+ }
+
+ /* Style the submit button with a specific background color etc */
+button[type=submit] {
+    background-color: #0089C6;
+    /* background: linear-gradient(to right, hsl(136, 65%, 51%), hsl(192, 70%, 51%)); OLD */
+    color: #f9f6f6;
+    /* margin-top: 20px; */
+    width: 100%;
+    padding: 12px 150px;
+    border: none;
+    font-weight: 400;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+  button[type=submit]:hover {
+    /* background-color: #45a049; OLD */
+    filter: brightness(110%);
+  }
+
+
+

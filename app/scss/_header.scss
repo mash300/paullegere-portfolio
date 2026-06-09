@@ -1,0 +1,162 @@
+@use "mixins";
+@use "variables";
+
+.header { 
+    // position: relative;
+    // width: 100%;   //** Need Nav to stay static on top
+    // // background-size: cover;
+    
+    // z-index: 1;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #fff;
+    z-index: 1000;
+
+    // Hamburger Expanded Styles
+    &.open {
+
+        .header__toggle {
+            > span:first-child {
+                transform: rotate(45deg);
+                width: 31px;
+            }
+            
+            > span:nth-child(2) {
+                opacity: 0;
+            }
+            
+            > span:last-child {
+                transform: rotate(-45deg);
+                width: 31px;
+            }
+        }
+    }
+
+    .overlay {
+        // z-index: 1;
+        opacity: 0;
+        position: fixed;
+        top: 0px;
+        right: 0px;
+        bottom: 0px;
+        left: 0px;
+        background-image: linear-gradient(variables.$darkBlue, transparent);
+    }
+
+    nav {
+        position: relative;
+        // background-color: variables.$white; Far too white - OLD
+        background-color: #fff;
+        padding-top: 1.0625rem;
+        padding-bottom: 1.0625rem;
+    }
+
+    &__logo {
+
+        img {
+            width: 100%;
+            height: 50px;
+        }
+    }
+
+    &__toggle {  // this is the mobile menu toggle
+        
+        > span {
+            display: block;
+            background-color: variables.$darkBlue;
+            width: 30px;
+            height: 4px;
+            margin-right: 20px;
+            border-radius: 2px;
+            transition: all 300ms ease-in-out;
+            transform-origin: 3px 1px;
+
+            &:not(:last-child) {
+                margin-bottom: 5px;
+            }
+        }
+    }
+
+    &__menu {
+        z-index: 1;
+        position: absolute;
+        width: calc(100% - 3rem);
+        left: 50%;
+        transform: translateX(-50%);
+        background: variables.$white;
+        margin-top: 1.5625rem;
+        padding: 1.5625rem;
+        border-radius: 5px;
+
+        a {
+            display: block;
+            text-align: center;
+            color: variables.$darkBlue;
+            padding: 0.625rem;
+        }
+    }
+    
+        // border: 1px solid red;
+
+        a {
+            position: relative;
+            font-size: variables.$font-sm;
+            font-weight: 300;
+            color: variables.$greyBlue;
+            transition:  color 300ms ease-in-out;
+
+            &:not(:last-child) {
+                margin-right: 32px;
+ 
+                    @include mixins.breakpoint-down(medium){
+                        margin-right: 0px;
+                    }
+                  
+            }
+
+            &::before {
+                content: "";
+                position: absolute;
+                display: block;
+                height: 5px;
+                left: 0;
+                right: 0;
+                bottom: -12px;
+                background: linear-gradient(to right, variables.$limeGreen, variables.$brightCyan);
+                border-radius: 10px;
+                opacity: 0;
+                transition: opacity 300ms ease-in-out;
+
+                // Hide the green/blue bar for mobile devices
+                @include mixins.breakpoint-down(medium){
+                    display: none;
+                }
+            }
+
+
+            &:hover {
+                color: variables.$darkBlue;
+
+                &::before {
+                    opacity: 1;
+                }
+            }
+        }
+
+        // nav .header__links a.active {
+        //     color: variables.$darkGrey;
+        //     font-weight: 400;
+        // }
+
+        
+
+        nav .header__logo:before {
+            height: 0;
+        }
+        nav .header__links .button2:before {
+            height: 0;
+        }
+}

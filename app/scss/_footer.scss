@@ -1,0 +1,140 @@
+@use "mixins";
+@use "variables";
+
+.footerSection {
+    background-color: variables.$darkBlue;
+}
+.footer {
+    background-color: variables.$darkBlue;
+    color: variables.$white;
+    padding-top: 2.5rem;
+    align-items: start;
+    // text-align: center;
+
+    @include mixins.breakpoint-up(large) {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-areas: 
+            "logo links1 links2 contact"
+            "social links1 links2 copyright";
+        justify-items: start;
+    }
+
+    @include mixins.breakpoint-down(medium){
+        display: block;
+        // width: 100%;
+    }
+
+    a {
+        color: variables.$white ;
+    }
+
+    &__logo {
+        display: inline-block;
+        
+        img {
+            width: 100%;
+            height: 50px;
+        }
+        
+        @include mixins.breakpoint-down(medium) {
+            display: block;
+            margin-bottom: 1.875rem;
+        }
+        
+        @include mixins.breakpoint-up(large) {
+            grid-area: logo;
+        }
+    }
+
+    &__social {
+        
+        @include mixins.breakpoint-down(medium) {
+            margin-bottom: 1.875rem;  
+        }
+
+        @include mixins.breakpoint-up(large) {
+            grid-area: social;
+            align-self: end;
+        } 
+
+        a:not(:last-child) {
+            display: inline-block;
+            margin-right: 1rem;
+        }
+    }
+
+    &__links {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+
+        @include mixins.breakpoint-up(large) {
+            align-items: start;
+        }
+
+        &.col1 {
+            @include mixins.breakpoint-up(large) {
+                grid-area: links1;
+            }
+
+        }
+
+        &.col2 {
+            
+            @include mixins.breakpoint-down(medium) {
+                margin-bottom: 1.875rem;
+            }
+
+            @include mixins.breakpoint-up(large) {
+                grid-area: links2;
+            }
+        }
+    }
+
+    &__contact {
+
+
+        @include mixins.breakpoint-up(large) {
+            // grid-area: contact;
+            // text-align: right;
+            // justify-self: end;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+        }
+
+        @include mixins.breakpoint-down(medium){
+            display: block;
+            margin-right: auto;
+            margin-left: auto;
+            text-align: center;
+            // width: 50vw;
+            // width: 100%;
+        }
+
+        
+
+        a.button {
+
+            @include mixins.breakpoint-down(medium) {
+                margin-bottom: 1.875rem;     
+            }
+        }
+    }
+
+    &__copyright {
+
+        @include mixins.breakpoint-up(large) {
+            display: flex;
+            justify-content: flex-end;
+            margin-left: auto;
+        }    
+    }
+}
+
+.footer_copyright img {
+    margin-top: 15px;
+}

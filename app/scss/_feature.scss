@@ -1,0 +1,129 @@
+@use "mixins";
+@use "variables";
+
+.feature {
+    // background-color: variables.$lightGreyBlue; OLD
+    background-color: rgb(250, 250, 250);
+    text-align: center;
+
+    @include mixins.breakpoint-up(medium) {
+        text-align: left;
+    }
+
+    &__intro {
+        // margin-bottom: 3.75rem;
+
+        @include mixins.breakpoint-up(large) {
+            width: 60%;
+        }
+
+        @include mixins.breakpoint-down(medium){
+            // padding-top: 50px;  
+        }
+    }
+
+    &__grid {
+
+        @include mixins.breakpoint-up(medium) {
+            display: flex;
+            flex-wrap: wrap;
+        }
+    }
+
+    &__grid_features {
+
+        @include mixins.breakpoint-up(medium) {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+            // flex-wrap: wrap;
+            column-gap: 180px;
+        }
+    }
+
+    
+    &__item {
+        padding: 0.9375rem;
+
+        @include mixins.breakpoint-up(medium) {
+            flex: 1 0 50%;
+        }
+
+        @include mixins.breakpoint-up(large) {
+            flex: 1;
+        }
+    }
+
+    &__demo {
+        padding: 0.9375rem;
+        margin-left: 50px;  
+
+        @include mixins.breakpoint-up(medium) {
+            flex: 1 0 50%;
+        }
+
+        @include mixins.breakpoint-up(large) {
+            flex: 1;
+        }
+    }
+
+    &__icon {
+        margin-bottom: 1.875rem;
+
+        @include mixins.breakpoint-up(large) {
+            margin-bottom: 2.75rem;
+        }
+    }
+
+    &__title {
+        font-weight: 300;
+        line-height: 1.17;
+        color: variables.$darkBlue;
+        font-size: 1.25rem;
+        margin-bottom: 1.5rem;
+
+        @include mixins.breakpoint-up(large) {
+            font-size: 1.5rem;
+            margin-bottom: 1.125rem;
+        }
+    }
+
+    &__description {
+        // font-size: 0.875rem; OLD
+        font-size: variables.$font-sm;
+        line-height: 1.5;
+    }
+
+    &__description_outcome {
+        // font-size: 0.875rem; OLD
+        font-size: variables.$font-sm;
+        line-height: 1.5;
+
+        @include mixins.breakpoint-up(large) {
+            width: 60%;
+        }
+    }
+}
+
+.feature ul {
+    display: inline-block;
+    width: fit-content;
+    margin: 0 auto;
+    padding-left: 0;
+    list-style-position: inside; 
+    @include mixins.breakpoint-down(small){
+        text-align: left;
+        list-style-position: outside;  
+    }
+}
+
+.personas {
+    grid-gap: 150px;
+}
+
+.imgDesc p {
+    color: #727272;
+    font-size: variables.$font-sm;
+    font-style: italic;
+      
+}
+

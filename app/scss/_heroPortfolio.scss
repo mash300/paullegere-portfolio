@@ -1,0 +1,113 @@
+@use "mixins";
+@use "variables";
+
+.heroPortfolio {
+    background-color: variables.$darkGrey;
+
+    // height: 400px;
+
+.container {
+    @include mixins.breakpoint-up(large){
+        display: flex;
+        align-items: center;
+    }
+}
+
+&__text {
+    text-align: center;
+    padding-top: auto;
+    padding-bottom: auto;
+
+@include mixins.breakpoint-up(large){
+    flex: 2;
+    order: 1;  // Slick way to reorder flex child elements
+    text-align: center;   
+}
+}
+
+h1 {
+    color: variables.$white;;
+}
+}
+
+// Hero Styles for TGC Electron page
+.heroPortfolio_TGC {
+    // background-color: $darkGrey;
+    // background-color: red;
+    background-image:url('/images/TGC_heroImage.png'); 
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover; 
+    // height: 400px;
+
+.container {
+    @include mixins.breakpoint-up(large){
+        display: flex;
+        align-items: center;
+    }
+}
+
+&__text {
+    text-align: center;
+    padding-top: auto;
+    padding-bottom: auto;
+
+@include mixins.breakpoint-up(large){
+    flex: 2;
+    order: 1;  // Slick way to reorder flex child elements
+    text-align: center;   
+}
+}
+
+h1 {
+    color: variables.$white;;
+}
+}
+
+.TGS_main {
+    display: block;
+    background:url('/images/TGS_main.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    box-shadow: 0px 3px 12px rgba($color: #000000, $alpha: 0.20);
+    border-radius: 5px;
+    // width: 750px;
+    width: 800px;
+    height: 453px;
+}
+
+.TGS_menu {
+    display: block;
+    background:url('/images/TGS_menu.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    box-shadow: 0px 3px 12px rgba($color: #000000, $alpha: 0.20);
+    border-radius: 5px;
+    margin-top: -10px;
+    width: 300px;
+    height: 447px;
+}
+
+.TGS_controls {
+    display: block;
+    background:url('/images/TGS_controls.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    box-shadow: 0px 3px 12px rgba($color: #000000, $alpha: 0.20);
+    border-radius: 5px;
+    width: 300px;
+    height: 114px;
+}
+
+.TGS_pannel {
+    display: block;
+    background:url('/images/TGS_pannel.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    box-shadow: 0px 3px 12px rgba($color: #000000, $alpha: 0.20);
+    border-radius: 5px;
+    margin-top: -10px;
+    width: 300px;
+    height: 379px;
+    margin-bottom: 20px;
+}

@@ -1,0 +1,39 @@
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+
+# Node modules
+node_modules/
+
+# npm logs
+npm-debug.log*
+
+# SASS cache
+.sass-cache/
+
+# VS Code
+.vscode/
+
+# Affinity
+source/
+*.afphoto
+*.afdesign
+*.afpub
+*.af
+*.af~lock~
+*.psd
+
+# Environment files
+.env
+.env.local
+private_config/
+config.php
+
+# OS files
+desktop.ini
+
+# Temporary files
+*.tmp
+*.swp
