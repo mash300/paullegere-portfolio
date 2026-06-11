@@ -27,19 +27,12 @@
     
 
 }
-
 @include mixins.breakpoint-up(large) {
     flex: 2;
     order: 3;  // Slick way to reorder flex child elements
     min-height: 41rem;
     background-image: none;
-    // background-image: url('/images/bg-intro-desktop.svg');
-    // background-position: left center;
 }
-
-// &::before, &::after {
-//     border: 1px solid magenta;
-// } // Adds a magenta border around these elements to help with layout
 
 &::before {
 
@@ -96,4 +89,74 @@ p {
         max-width: 300px;
     }
 }
+
+
+.about-intro {
+    box-sizing: border-box;
+    max-width: 60%;
+}
+
+// .about-intro p {
+//     margin-top: 24px;
+//     margin-bottom: 24px;
+    
+//     @include mixins.breakpoint-up(large) {
+//         // max-width: 474px; OLD
+//         max-width: 500px;
+//     }
+// }
+
+.aboutIntro hr {
+    width: 100%;
+}
+
+    &__about-image {
+    position: relative;
+    background-image: url('/images/about_image.png');
+    // opacity: 0.3;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    
+        @include mixins.breakpoint-up(medium) {
+            position: relative;
+            min-height: 49rem;
+            background-size: 72%;
+            background-position: center 30%;
+            
+
+        }
+        @include mixins.breakpoint-up(large) {
+            flex: 2;
+            order: 3;  // Slick way to reorder flex child elements
+            min-height: 41rem;
+            // background-image: none;
+        }
+    }
+
+    &__about-text {
+    text-align: center;
+    // Edit spacing of title
+    // padding-left: 0;
+    // padding-right: 0;
+
+        @include mixins.breakpoint-up(large){
+        flex: 2;
+        order: 1;  // Slick way to reorder flex child elements
+        text-align: left;
+        max-width: 42%;
+        }
+    }
+
+
+}
+
+.hero__about-text p {
+    margin-top: 24px;
+    margin-bottom: 24px;
+    
+        @include mixins.breakpoint-up(large) {
+            // max-width: 474px; OLD
+            max-width: 500px;
+        }
 }

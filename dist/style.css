@@ -547,8 +547,7 @@ a, a:visited, a:hover {
 @media (min-width: 64em) {
   .hero .container {
     display: flex;
-    -moz-column-gap: 54px;
-         column-gap: 54px;
+    column-gap: 54px;
   }
 }
 .hero__image {
@@ -613,6 +612,56 @@ a, a:visited, a:hover {
 @media (min-width: 64em) {
   .hero p {
     max-width: 300px;
+  }
+}
+.hero .about-intro {
+  box-sizing: border-box;
+  max-width: 60%;
+}
+.hero .aboutIntro hr {
+  width: 100%;
+}
+.hero__about-image {
+  position: relative;
+  background-image: url("/images/about_image.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+@media (min-width: 40em) {
+  .hero__about-image {
+    position: relative;
+    min-height: 49rem;
+    background-size: 72%;
+    background-position: center 30%;
+  }
+}
+@media (min-width: 64em) {
+  .hero__about-image {
+    flex: 2;
+    order: 3;
+    min-height: 41rem;
+  }
+}
+.hero__about-text {
+  text-align: center;
+}
+@media (min-width: 64em) {
+  .hero__about-text {
+    flex: 2;
+    order: 1;
+    text-align: left;
+    max-width: 42%;
+  }
+}
+
+.hero__about-text p {
+  margin-top: 24px;
+  margin-bottom: 24px;
+}
+@media (min-width: 64em) {
+  .hero__about-text p {
+    max-width: 500px;
   }
 }
 
@@ -740,8 +789,7 @@ a, a:visited, a:hover {
   .feature__grid_features {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
-    -moz-column-gap: 180px;
-         column-gap: 180px;
+    column-gap: 180px;
   }
 }
 .feature__item {
@@ -808,7 +856,6 @@ a, a:visited, a:hover {
 
 .feature ul {
   display: inline-block;
-  width: -moz-fit-content;
   width: fit-content;
   margin: 0 auto;
   padding-left: 0;
@@ -1084,4 +1131,6 @@ a, a:visited, a:hover {
 .contact-errors li {
   color: #d93025;
   margin-bottom: 0.25rem;
-}/*# sourceMappingURL=style.css.map */
+}
+
+/*# sourceMappingURL=style.css.map */
