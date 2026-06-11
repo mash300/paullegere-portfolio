@@ -96,15 +96,6 @@ p {
     max-width: 60%;
 }
 
-// .about-intro p {
-//     margin-top: 24px;
-//     margin-bottom: 24px;
-    
-//     @include mixins.breakpoint-up(large) {
-//         // max-width: 474px; OLD
-//         max-width: 500px;
-//     }
-// }
 
 .aboutIntro hr {
     width: 100%;
@@ -136,9 +127,7 @@ p {
 
     &__about-text {
     text-align: center;
-    // Edit spacing of title
-    // padding-left: 0;
-    // padding-right: 0;
+
 
         @include mixins.breakpoint-up(large){
         flex: 2;

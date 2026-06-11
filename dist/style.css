@@ -665,6 +665,106 @@ a, a:visited, a:hover {
   }
 }
 
+.about-page {
+  flex: 1;
+  background-color: hsl(0, 0%, 98%);
+}
+
+.about-page__inner {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(280px, 0.85fr);
+  column-gap: 3rem;
+  align-items: start;
+}
+
+.about-page__text {
+  max-width: 40rem;
+}
+
+.about-page__text h1 {
+  margin-bottom: 1rem;
+}
+
+.about-page__text h2 {
+  margin-top: 1.5rem;
+  margin-bottom: 1.75rem;
+  max-width: 33rem;
+}
+
+.about-page__text p {
+  max-width: 32rem;
+}
+
+.about-page__text > .button {
+  margin-top: 8px;
+  margin-bottom: 2rem;
+}
+
+.about-page__aside {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding-top: 4rem;
+}
+
+.about-page__photo {
+  width: 100%;
+  max-width: 50vw;
+  aspect-ratio: 1/1;
+  background-image: url("/images/about_image.png");
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
+}
+
+.about-page__current {
+  max-width: 32rem;
+  margin-top: 2rem;
+}
+
+.about-page__current h3 {
+  margin-bottom: 0.75rem;
+}
+
+.about-page__current ul {
+  margin: 0;
+  padding-left: 1.25rem;
+}
+
+.about-page__current li {
+  margin-bottom: 0.5rem;
+}
+
+@media (max-width: 64rem) {
+  .about-page {
+    padding: 3rem 0 4rem;
+  }
+  .about-page__inner {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+  }
+  .about-page__aside {
+    order: -1;
+    padding-top: 0;
+    width: 100%;
+    gap: 1.5rem;
+    padding-bottom: 1rem;
+  }
+  .about-page__photo {
+    max-width: 420px;
+    margin: 0 auto;
+  }
+  .about-page__text {
+    max-width: 34rem;
+    margin: 0 auto;
+    padding-top: 0%;
+  }
+  .about-page__current {
+    max-width: 34rem;
+    margin: 2rem auto 0;
+  }
+}
 .heroPortfolio {
   background-color: hsl(0, 0%, 24%);
 }
