@@ -307,7 +307,6 @@
     box-shadow: 0px 3px 12px rgb(0 0 0 / 20%);
     color: white; 
     text-align: center; 
-    /* margin-bottom: 70px; */
 }
 
 .flux_prototype img{
@@ -317,7 +316,6 @@
     box-shadow: 0px 3px 12px rgb(0 0 0 / 20%);
     color: white; 
     text-align: center; 
-    /* margin-bottom: 70px; */
 }
 
 .flux_userflow img{
@@ -327,7 +325,6 @@
     box-shadow: 0px 3px 12px rgb(0 0 0 / 20%);
     color: white; 
     text-align: center; 
-    /* margin-bottom: 70px; */
 }
 
 /* VW Product Design Styles */
@@ -336,13 +333,22 @@
 }
 .VW_research img{
     display: block;
-    width: 70%;
+    width: 100%;
+    max-width: 900px;
     height: auto;
     margin: 0 auto;
     border-radius: 6px;
     box-shadow: 0px 3px 12px rgb(0 0 0 / 20%);
-    /* color: white;  */
-    /* text-align: center;  */
+}
+
+.VW_engineering img{
+    display: block;
+    width: 100%;
+    max-width: 700px;
+    height: auto;
+    margin: 0 auto;
+    border-radius: 6px;
+    box-shadow: 0px 3px 12px rgb(0 0 0 / 20%);
 }
 
 
@@ -356,7 +362,6 @@
     margin-top: 60px;
     margin-bottom: 5vh;
     border-radius: 6px;
-    /* background-color: rgba(17, 17, 17, 0.069); */
 }
 
 .contact-heading {
@@ -369,8 +374,6 @@ input[type=text], select, textarea {
     border: 1px solid #ccc; /* Gray border */
     border-radius: 4px; /* Rounded borders */
     box-sizing: border-box; /* Make sure that padding and width stays in place */
-    /* margin-top: 6px;
-    margin-bottom: 16px; */
     resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
  }
 
@@ -384,15 +387,12 @@ input[type=text], select, textarea {
     border: 1px solid #ccc; /* Gray border */
     border-radius: 4px; /* Rounded borders */
     box-sizing: border-box; /* Make sure that padding and width stays in place */
-    /* margin-top: 6px;
-    margin-bottom: 16px; */
     resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
  }
 
  /* Style the submit button with a specific background color etc */
 button[type=submit] {
     background-color: #0089C6;
-    /* background: linear-gradient(to right, hsl(136, 65%, 51%), hsl(192, 70%, 51%)); OLD */
     color: #f9f6f6;
     /* margin-top: 20px; */
     width: 100%;
