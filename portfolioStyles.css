@@ -330,6 +330,21 @@
     /* margin-bottom: 70px; */
 }
 
+/* VW Product Design Styles */
+.VW_research {
+    text-align: center;
+}
+.VW_research img{
+    display: block;
+    width: 70%;
+    height: auto;
+    margin: 0 auto;
+    border-radius: 6px;
+    box-shadow: 0px 3px 12px rgb(0 0 0 / 20%);
+    /* color: white;  */
+    /* text-align: center;  */
+}
+
 
 /* Contact Form Styles */
 
