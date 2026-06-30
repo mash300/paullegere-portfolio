@@ -127,3 +127,79 @@
       
 }
 
+// Case Study feature for tooling
+
+.case-feature-split {
+  display: grid;
+  background-color: rgb(250, 250, 250);
+  grid-template-columns: minmax(280px, 0.8fr) minmax(520px, 1.4fr);
+  gap: 3rem;
+  align-items: center;
+  max-width: 1200px;
+//   padding-inline: 2rem;
+}
+
+.case-feature-split__content {
+  max-width: 34rem;
+    margin: 3rem auto;
+}
+
+.case-feature-split__content h2 {
+  margin-bottom: 1.5rem;
+}
+
+.case-feature-split__list {
+  margin: 0;
+  padding: 0;
+  list-style:disc;
+}
+
+.case-feature-split__list li {
+  position: relative;
+  padding-left: 0.75rem;
+  margin-bottom: 1rem;
+  line-height: 1.6;
+  font-size: 1rem;
+}
+
+.case-feature-split__list li::before {
+//   content: "→";
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.case-feature-split__media {
+  margin: 0;
+}
+
+.case-feature-split__media img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+  box-shadow: 0 3px 12px rgb(0 0 0 / 20%);
+}
+
+.case-feature-split__media figcaption {
+  margin-top: 0.75rem;
+//   font-size: 0.875rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  opacity: 0.75;
+}
+
+@media (max-width: 56rem) {
+  .case-feature-split {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    margin: 3rem auto;
+    padding-inline: 1.5rem;
+  }
+
+  .case-feature-split__content {
+    max-width: 100%;
+  }
+}
+
+
