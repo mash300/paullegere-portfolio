@@ -1038,7 +1038,6 @@ a, a:visited, a:hover {
   .case-feature-split {
     grid-template-columns: 1fr;
     gap: 2rem;
-    margin: 3rem auto;
     padding-inline: 1.5rem;
   }
   .case-feature-split__content {
