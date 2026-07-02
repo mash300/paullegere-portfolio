@@ -292,7 +292,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         <img src="/images/PLD_Icon.svg" alt="logo">
       </a>
     </div>
-
     <div class="footer__links col1">
       <a href="index.html">Home</a>
       <a href="/about.html">About</a>
@@ -300,26 +299,27 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     
     <div class="footer__links col2">
       <a href="/index.html#case_studies">Case Studies</a>
+
     </div>
 
     <div class="footer__contact col3">
-      <a href="/contact.php" class="button2">Contact</a>
       <!-- <a href="/contact.php" class="button2">Contact</a> -->
-      <div class="footer_copyright">
+      <div>
         <!-- &copy; PL Design. All Rights Reserved. -->
+        <a href="mailto:info@paullegere.net" target="_blank" style="padding-right: 10px;">
+          <img src="/images/email_icon_2.svg" alt="info@paullegere.net">
+      </a>
+        <a href="https://www.linkedin.com/in/paul-legere/" target="_blank">
+          <img src="/images/linkedin_logo_inline.svg" alt="Paul legere on LinkedIn">
+      </a>      
+      </div>
+      <!-- <div class="footer_copyright">
         <a href="https://www.linkedin.com/in/paul-legere/" target="_blank">
           <img src="/images/linkedin_logo_inline.svg" alt="Paul legere on LinkedIn">
         </a>
-      </div>
+      </div> -->
+      <!-- &copy; PL Design. All Rights Reserved. -->
     </div>
-  
-    <!-- <div class="footer__contact">
-      <a href="/contact.php" class="button2">Contact</a>
-    </div> -->
-  
-    <!-- <div class="footer_copyright">
-      &copy; PL Design. All Rights Reserved.
-    </div> -->
   </footer> 
 </div>
     <script src="/app/js/script.js"></script>
