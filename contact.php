@@ -230,7 +230,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         <div>
 
         <div class="feature__intro">
-            <h2 class="contact-heading">
+            <h2 class="display">
                 Get in Touch
             </h2>
             <!-- <h3>Get in Touch</h3> -->
