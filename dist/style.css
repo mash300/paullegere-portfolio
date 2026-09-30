@@ -1158,7 +1158,8 @@ a, a:visited, a:hover {
 .case-studies__grid {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 1.5rem;
+  column-gap: 1.5rem;
+  row-gap: 2.5rem;
 }
 @media (min-width: 40em) {
   .case-studies__grid {
@@ -1173,31 +1174,44 @@ a, a:visited, a:hover {
 
 .case-card {
   display: block;
-  overflow: hidden;
+  min-width: 0;
   color: inherit;
   text-decoration: none;
-  border-radius: 0.75rem;
 }
 .case-card__image {
   aspect-ratio: 4/3;
+  width: 100%;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  border-radius: 0.75rem;
+  background-color: rgb(245, 245, 245);
+  transition: transform 180ms ease;
 }
 .case-card__content {
-  padding: 1rem 0;
+  padding-top: 1rem;
 }
 .case-card__category {
   margin-bottom: 0.4rem;
   font-size: 0.75rem;
+  font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.06em;
+  color: #727272;
 }
 .case-card h3 {
-  margin-bottom: 0.4rem;
+  margin: 0 0 0.4rem;
+  line-height: 1.25;
+  color: hsl(230, 15.32%, 18.98%);
 }
 .case-card p {
   margin: 0;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #727272;
+}
+.case-card:hover .case-card__image {
+  transform: translateY(-2px);
 }
 
 .footerSection {
