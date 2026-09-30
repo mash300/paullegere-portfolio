@@ -1155,6 +1155,51 @@ a, a:visited, a:hover {
   padding-bottom: 1.5rem;
 }
 
+.case-studies__grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+@media (min-width: 40em) {
+  .case-studies__grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+@media (min-width: 64em) {
+  .case-studies__grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+.case-card {
+  display: block;
+  overflow: hidden;
+  color: inherit;
+  text-decoration: none;
+  border-radius: 0.75rem;
+}
+.case-card__image {
+  aspect-ratio: 4/3;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.case-card__content {
+  padding: 1rem 0;
+}
+.case-card__category {
+  margin-bottom: 0.4rem;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+.case-card h3 {
+  margin-bottom: 0.4rem;
+}
+.case-card p {
+  margin: 0;
+}
+
 .footerSection {
   background-color: hsl(230, 15.32%, 18.98%);
 }
