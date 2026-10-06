@@ -57,6 +57,8 @@
   h3 {
     margin: 0 0 0.4rem;
 
+    font-size: 1.25rem;
+    font-weight: 600;
     line-height: 1.25;
     color: variables.$darkBlue;
   }
@@ -73,5 +75,20 @@
     .case-card__image {
       transform: translateY(-2px);
     }
+  }
+}
+
+.kricket-hero-logo {
+  text-align: center;
+
+  img {
+    width: min(70%, 42rem);
+    height: auto;
+  }
+
+  p {
+    margin-top: 0.5rem;
+    font-size: 1rem;
+    letter-spacing: 0.02em;
   }
 }

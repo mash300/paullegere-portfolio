@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 738 115" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+    <g transform="matrix(1,0,0,1,-104.442136,-36.035493)">
+        <g transform="matrix(1,0,0,1,80,78)">
+            <g transform="matrix(0.548538,0,0,0.548538,18.956756,-47.449887)">
+                <g transform="matrix(1,0,0,1,-8,-15)">
+                    <path d="M21,25L207,89L196.526,98.737L18,40.931L21,25Z" style="fill:rgb(250,250,250);fill-rule:nonzero;"/>
+                    <path d="M32,61L189.862,103.931L178.862,112.931L28.534,73L32,61Z" style="fill:rgb(250,250,250);fill-rule:nonzero;"/>
+                    <path d="M32,234L207,89C221,94 236,100 248,105C265,112 278,121 284,135C288,147 283,162 277,174L240,234L32,234ZM208.793,102.725C215.079,104.694 225.521,108.605 230.862,111.259C226.846,116.65 226.513,127.803 234.862,131.725C241.095,134.652 247.862,131.259 250.862,122.259C258.416,125.558 263.06,129.51 265.739,133.852C260.554,145.588 240.878,167.228 214.657,148.852C199.535,138.254 203.448,111.918 208.793,102.725Z" style="fill:rgb(250,250,250);"/>
+                </g>
+            </g>
+        </g>
+        <g transform="matrix(1,0,0,1,260,102)">
+            <g transform="matrix(1,0,0,1,-1.563905,16.181949)">
+                <g transform="matrix(1,0,-0.267949,1,0,0)">
+                    <g>
+                        <text x="0px" y="0px" style="font-family:'Arial-BoldMT', 'Arial', sans-serif;font-weight:700;font-size:72px;fill:rgb(250,250,250);">K</text>
+                        <g transform="matrix(1,0,0,1,48.9,0)">
+                            <text x="0px" y="0px" style="font-family:'Arial-BoldMT', 'Arial', sans-serif;font-weight:700;font-size:72px;fill:rgb(250,250,250);">R<tspan x="48.9px 65.808px 114.708px 163.608px 208.536px 249.42px 266.328px 315.228px 360.156px 405.083px 421.991px 474.899px " y="0px 0px 0px 0px 0px 0px 0px 0px 0px 0px 0px 0px ">ICKET DESIGN</tspan></text>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
