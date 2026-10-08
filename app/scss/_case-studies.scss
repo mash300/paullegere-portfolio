@@ -1,6 +1,9 @@
 @use "mixins";
 @use "variables";
 
+// ==========================================
+// CASE STUDY CARDS
+// ==========================================
 .case-studies {
 
   &__grid {
@@ -92,3 +95,105 @@
     letter-spacing: 0.02em;
   }
 }
+
+// ==========================================
+// CASE STUDY HERO
+// ==========================================
+
+.case-study-hero {
+  background-color: #f0f2f4;
+
+  &__layout {
+    display: grid;
+    grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
+    align-items: center;
+    gap: clamp(2rem, 5vw, 5rem);
+  }
+
+  &__category {
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    color: #66717d;
+    margin-bottom: 1.5rem;
+  }
+
+  h1 {
+    font-size: clamp(2.75rem, 5vw, 5rem);
+    font-weight: 600;
+    line-height: 1.08;
+    letter-spacing: -0.035em;
+    color: #1d2735;
+    margin: 0 0 1.5rem;
+  }
+
+  &__summary {
+    font-size: clamp(1rem, 1.5vw, 1.25rem);
+    line-height: 1.6;
+    color: #485464;
+    max-width: 36rem;
+  }
+
+  &__visual img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 0.75rem;
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.08);
+  }
+
+  @media (max-width: 48rem) {
+    &__layout {
+      grid-template-columns: 1fr;
+    }
+  }
+}
+
+// ==========================================
+// CASE STUDY - Local Alignments
+// ==========================================
+// Case Study Overview - Mobile
+@media (max-width: 47.99rem) {
+
+  .feature.case-study-overview {
+
+    text-align: left;
+
+    .feature__item,
+    .feature__title,
+    .feature__description,
+    .feature__intro,
+    .feature__intro p,
+    .feature__description p {
+      text-align: left;
+    }
+  }
+}
+
+
+@media (min-width: 48rem) and (max-width: 63.99rem) {
+  .case-study-overview {
+
+    .feature__grid {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) minmax(0, 1.6fr);
+      gap: 2.5rem;
+      align-items: start;
+    }
+
+    .feature__item {
+      flex: initial;
+      min-width: 0;
+    }
+
+    .feature__intro {
+      width: auto;
+      min-width: 0;
+    }
+
+    .verticalBar {
+      display: none;
+    }
+  }
+}
+

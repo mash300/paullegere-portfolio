@@ -4,7 +4,7 @@
 .feature {
     // background-color: variables.$lightGreyBlue; OLD
     background-color: rgb(250, 250, 250);
-    text-align: center;
+    text-align: left;
 
     @include mixins.breakpoint-up(medium) {
         text-align: left;

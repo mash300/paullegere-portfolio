@@ -867,7 +867,7 @@ a, a:visited, a:hover {
 
 .feature {
   background-color: rgb(250, 250, 250);
-  text-align: center;
+  text-align: left;
 }
 @media (min-width: 40em) {
   .feature {
@@ -1229,6 +1229,81 @@ a, a:visited, a:hover {
   letter-spacing: 0.02em;
 }
 
+.case-study-hero {
+  background-color: #f0f2f4;
+}
+.case-study-hero__layout {
+  display: grid;
+  grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
+  align-items: center;
+  gap: clamp(2rem, 5vw, 5rem);
+}
+.case-study-hero__category {
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  color: #66717d;
+  margin-bottom: 1.5rem;
+}
+.case-study-hero h1 {
+  font-size: clamp(2.75rem, 5vw, 5rem);
+  font-weight: 600;
+  line-height: 1.08;
+  letter-spacing: -0.035em;
+  color: #1d2735;
+  margin: 0 0 1.5rem;
+}
+.case-study-hero__summary {
+  font-size: clamp(1rem, 1.5vw, 1.25rem);
+  line-height: 1.6;
+  color: #485464;
+  max-width: 36rem;
+}
+.case-study-hero__visual img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 0.75rem;
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.08);
+}
+@media (max-width: 48rem) {
+  .case-study-hero__layout {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 47.99rem) {
+  .feature.case-study-overview {
+    text-align: left;
+  }
+  .feature.case-study-overview .feature__item,
+  .feature.case-study-overview .feature__title,
+  .feature.case-study-overview .feature__description,
+  .feature.case-study-overview .feature__intro,
+  .feature.case-study-overview .feature__intro p,
+  .feature.case-study-overview .feature__description p {
+    text-align: left;
+  }
+}
+@media (min-width: 48rem) and (max-width: 63.99rem) {
+  .case-study-overview .feature__grid {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1.6fr);
+    gap: 2.5rem;
+    align-items: start;
+  }
+  .case-study-overview .feature__item {
+    flex: initial;
+    min-width: 0;
+  }
+  .case-study-overview .feature__intro {
+    width: auto;
+    min-width: 0;
+  }
+  .case-study-overview .verticalBar {
+    display: none;
+  }
+}
 .footerSection {
   background-color: hsl(230, 15.32%, 18.98%);
 }
