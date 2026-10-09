@@ -49,28 +49,56 @@
   </div>
 </header>
 
-<section class="heroPortfolio_TGC">
+<!-- Hero section - OLD -->
+<!-- <section class="heroPortfolio_TGC">
   <div class="container">
-    <!-- <div class="heroPortfolio__image"></div> -->
-        <!-- <h1>Brewers Insight Product Design</h1> -->
         <div class="heroPortfolio__text container--pall">
           <div style=" margin-left: auto; margin-right: auto;">
               <img src="/images/bi_logo.svg" style="height: auto; width: 30%" alt="PL Design">
           </div>
         </div>
-      <!-- <a href="#" class="button hero__contact">Contact</a> -->
+  </div>
+</section> -->
+
+<!-- Hero section - NEW -->
+<section class="case-study-hero">
+  <div class="container container--pall case-study-hero__layout">
+
+    <div class="case-study-hero__copy">
+
+      <p class="case-study-hero__category">
+        PRODUCT DESIGN · SAAS
+      </p>
+
+      <h1>Brewers Insight</h1>
+
+      <p class="case-study-hero__summary">
+        Designing a production planning system for
+        brewery operations, connecting scheduling,
+        batch management, and forecasting within
+        a unified workflow.
+      </p>
+
+    </div>
+
+    <div class="case-study-hero__visual">
+      <img
+        src="/images/BI_Planner_UI.png"
+        alt="Brew Planner interface concept showing brewery production scheduling"
+        fetchpriority="high"
+      >
+    </div>
+
   </div>
 </section>
-
-
 <!-- <a href="#" class="attribution">Copyright Paul Legere 2021</a> -->
 
-<section class="feature">
+<section class="feature case-study-overview case-study-section">
 
     <div class="feature__content container container--pall">
       
         
-        <div class="feature__grid">
+        <div class="feature__grid case-study-section">
 
   
         <div class="feature__item">
@@ -113,18 +141,20 @@
         </div>
       </div>
       <!--========= Product image ============-->
-    <div class="BI_hero container container--sides">
+    <!-- <div class="BI_hero container container--sides">
       <br>
       <img src="/images/BI_Planner_UI.png">
       <div class="imgDesc">
         <p>Polished UI exploration based on the original MVP planner.</p>
       </div>
-    </div>
+    </div> -->
 
       <!--========= Product image ============-->
-    <div class="BI_hero container container--sides">
+    <div class="BI_hero container container--sides ">
       <br>
-      <img src="/images/BI_hero.jpg">
+      <img src="/images/BI_hero.jpg"
+      alt="Original Brew Planner MVP concept with batch configuration sidebar"
+      loading="lazy">
       <div class="imgDesc">
         <p>Original MVP concept showing the planner and batch-configuration sidebar.</p>
       </div>
@@ -193,7 +223,7 @@
             </p>
             <h4>Implementation Awareness</h4>
             <p>
-              Although the deliverables were concuptual mockups and system diagrams, the designs were developed with technical feasibility in mind. The feature was built by engineering and remains in use within the live product.
+              Although the deliverables were conceptual mockups and system diagrams, the designs were developed with technical feasibility in mind. The feature was built by engineering and remains in use within the live product.
             </p>
           </div>
         </div>
@@ -312,7 +342,7 @@
       <br>
     </div>
     <br>
-    <div class="BI_hero container container--sides">
+    <div class="BI_hero container container--sides case-study-section">
       <div class="feature__title">
         Creating a Production Batch
       </div>
@@ -328,7 +358,7 @@
         </div>
         <br>
     </div>
-    <div class="BI_hero container container--sides">
+    <div class="BI_hero container container--sides case-study-section">
       <div class="feature__title">
         Splitting Fermentation into Packaging Runs
       </div>
