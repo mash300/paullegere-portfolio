@@ -34,6 +34,7 @@
   text-decoration: none;
 
   &__image {
+    display: block;
     aspect-ratio: 4 / 3;
     width: 100%;
     background-position: center;
@@ -43,7 +44,7 @@
     border-radius: 0.75rem;
     background-color: rgb(245, 245, 245);
 
-    transition: transform 180ms ease;
+    // transition: transform 180ms ease;
   }
 
   &__content {
@@ -79,9 +80,28 @@
   }
 
   &:hover {
-    .case-card__image {
+    .case-card__media {
       transform: translateY(-2px);
     }
+  }
+  
+  &__media {
+    transition: transform 180ms ease;
+  }
+}
+
+.case-card__media.case-study-thumb--tint {
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.06);
+    border-radius: inherit;
+    pointer-events: none;
   }
 }
 

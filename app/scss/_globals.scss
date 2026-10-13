@@ -205,14 +205,13 @@ a, a:visited, a:hover {
 .button {
     display: inline-block;
     padding: 0.875rem 2.1875rem;
-    // background: linear-gradient(to right, $limeGreen, $brightCyan);
-    // background-color: #1a85ac; OLD Color
+
     background-color: #0089C6;
     border: none;
     border-radius: 10px;
     cursor: pointer;
     color: variables.$white;
-    font-weight: 400;
+    font-weight: 500;
     font-size: variables.$font-sm;
     transition: opacity 300ms ease-in-out;
 
@@ -230,7 +229,7 @@ a, a:visited, a:hover {
     border-radius: 10px;
     cursor: pointer;
     color: variables.$white;
-    font-weight: 400;
+    font-weight: 500;
     font-size: variables.$font-sm;
     // transition: opacity 300ms ease-in-out;
 

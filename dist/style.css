@@ -214,7 +214,7 @@ a, a:visited, a:hover {
   border-radius: 10px;
   cursor: pointer;
   color: hsl(0, 18%, 97%);
-  font-weight: 400;
+  font-weight: 500;
   font-size: 1rem;
   transition: opacity 300ms ease-in-out;
 }
@@ -230,7 +230,7 @@ a, a:visited, a:hover {
   border-radius: 10px;
   cursor: pointer;
   color: hsl(0, 18%, 97%);
-  font-weight: 400;
+  font-weight: 500;
   font-size: 1rem;
   transition: filter 300ms ease-in-out;
 }
@@ -1183,6 +1183,7 @@ a, a:visited, a:hover {
   text-decoration: none;
 }
 .case-card__image {
+  display: block;
   aspect-ratio: 4/3;
   width: 100%;
   background-position: center;
@@ -1190,7 +1191,6 @@ a, a:visited, a:hover {
   background-size: cover;
   border-radius: 0.75rem;
   background-color: rgb(245, 245, 245);
-  transition: transform 180ms ease;
 }
 .case-card__content {
   padding-top: 1rem;
@@ -1216,8 +1216,25 @@ a, a:visited, a:hover {
   line-height: 1.5;
   color: #727272;
 }
-.case-card:hover .case-card__image {
+.case-card:hover .case-card__media {
   transform: translateY(-2px);
+}
+.case-card__media {
+  transition: transform 180ms ease;
+}
+
+.case-card__media.case-study-thumb--tint {
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px;
+}
+.case-card__media.case-study-thumb--tint::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.06);
+  border-radius: inherit;
+  pointer-events: none;
 }
 
 .kricket-hero-logo {
