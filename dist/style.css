@@ -1287,6 +1287,9 @@ a, a:visited, a:hover {
   border-radius: 0.75rem;
   box-shadow: 0 12px 32px rgba(0, 0, 0, 0.08);
 }
+.case-study-hero__visual img[src$="KD_hero_responsive.svg"] {
+  box-shadow: none;
+}
 @media (max-width: 48rem) {
   .case-study-hero__layout {
     grid-template-columns: 1fr;
