@@ -188,19 +188,15 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 </section>
 
 
-
-        <div class="footerSection">
-  <footer class="footer container container--pall flex flex-jc-sb flex-ai-c">
-    <div class="footer__logo">
-      <a href="index.html">
+<div class="footerSection">
+<footer class="footer container container--pall flex flex-jc-sb flex-ai-c">
+  <div class="footer__logo">
+      <a href="#">
         <img src="/images/PLD_Icon.svg" alt="logo">
       </a>
     </div>
-  
-
-  
     <div class="footer__links col1">
-      <a href="index.html">Home</a>
+      <a href="/index.html">Home</a>
       <a href="/about.html">About</a>
     </div>
     
@@ -208,18 +204,20 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
       <a href="/index.html#case_studies">Case Studies</a>
 
     </div>
-  
+
     <div class="footer__contact col3">
-      <a href="/contact.php" class="button2">Contact</a>
       <!-- <a href="/contact.php" class="button2">Contact</a> -->
-      <div class="footer_copyright">
+      <div>
         <!-- &copy; PL Design. All Rights Reserved. -->
+        <a href="mailto:info@paullegere.net" target="_blank" style="padding-right: 10px;">
+          <img src="/images/email_icon_2.svg" alt="info@paullegere.net">
+      </a>
         <a href="https://www.linkedin.com/in/paul-legere/" target="_blank">
           <img src="/images/linkedin_logo_inline.svg" alt="Paul legere on LinkedIn">
-        </a>
+      </a>      
       </div>
-    </div>
 
+    </div>
   </footer> 
 </div>
 
