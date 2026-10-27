@@ -104,8 +104,8 @@
         a {
             position: relative;
             font-size: variables.$font-sm;
-            font-weight: 300;
-            color: variables.$greyBlue;
+            font-weight: 400;
+            color: #667080;
             transition:  color 300ms ease-in-out;
 
             &:not(:last-child) {

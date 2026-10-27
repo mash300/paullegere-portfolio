@@ -6,6 +6,15 @@
 // ==========================================
 .case-studies {
 
+  &__content > h2 {
+    margin-bottom: 1.5rem;
+    font-weight: 500;
+    line-height: 1.2;
+  }
+
+  // This section is targeted by every Case Studies navigation link.
+  scroll-margin-top: 5.5rem;
+
   &__grid {
     display: grid;
     grid-template-columns: 1fr;

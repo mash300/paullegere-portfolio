@@ -1,34 +1,217 @@
 @use "mixins";
 @use "variables";
 
-.contact_feature {
-    min-height: 100svh;
+// Contact page polish – isolated to the contact page to avoid changing case studies.
+// Retains the shared Playfair Display and Inter typefaces.
+.contact-page {
+  background: rgb(250, 250, 250);
+  color: variables.$darkBlue;
+
+  &__content {
+    padding-top: clamp(3.25rem, 5.5vw, 4.75rem);
+    padding-bottom: clamp(3.25rem, 5vw, 4.75rem);
+  }
+
+  &__intro {
+    max-width: 60rem;
+    margin-bottom: clamp(1.75rem, 3.3vw, 2.5rem);
+  }
+
+  &__title.display {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: clamp(3.375rem, 7vw, 6.25rem);
+    line-height: 1.05;
+    font-weight: 400;
+    letter-spacing: -0.025em;
+    margin: 0 0 0.875rem;
+    max-width: 100%;
+    overflow-wrap: normal;
+  }
+
+  &__lead {
+    color: variables.$darkGrey;
+    font-family: 'Inter', sans-serif;
+    font-size: clamp(1rem, 1.4vw, 1.125rem);
+    line-height: 1.48;
+    font-weight: 400;
+    max-width: 48ch;
+    margin: 0;
+  }
+
+  .contact-hero {
+    display: flex;
+    align-items: stretch;
+    width: 100%;
+    height: auto;
+    gap: clamp(2rem, 5vw, 4.5rem);
+    margin: 0;
+    min-height: 0;
+  }
+
+  .form-wrapper {
+    width: auto;
+    min-width: 0;
+    flex: 1 1 50%;
+  }
+
+  .kayto-painting {
+    width: auto;
+    min-width: 0;
+    flex: 1 1 50%;
+    min-height: 28rem;
+    background-position: center;
+    background-size: cover;
+    border-radius: 6px;
+  }
+
+  &__field {
+    margin-bottom: 1.25rem;
+
+    label {
+      display: block;
+      font-size: 0.9375rem;
+      font-weight: 500;
+      line-height: 1.4;
+      color: variables.$darkBlue;
+      margin-bottom: 0.5rem;
+    }
+  }
+
+  .my-contact-form input[type='text'],
+  .my-contact-form input[type='email'],
+  .my-contact-form textarea {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0.75rem;
+    border: 1px solid #b8c0ca;
+    border-radius: 5px;
+    background: #fff;
+    color: variables.$darkBlue;
+    font: inherit;
+    font-size: 1rem;
+    line-height: 1.4;
+  }
+
+  .my-contact-form input:focus-visible,
+  .my-contact-form textarea:focus-visible {
+    outline: 2px solid #0089c6;
+    outline-offset: 2px;
+  }
+
+  .my-contact-form textarea {
+    min-height: 10rem;
+    resize: vertical;
+  }
+
+  &__captcha {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    max-width: 302px;
+    height: 76px;
+    border: 1px solid #d3d3d3;
+    border-radius: 2px;
+    padding: 0.75rem;
+    background: #fafafa;
+    color: #242424;
+    box-shadow: 0 1px 3px rgb(0 0 0 / 10%);
+    font-size: 0.875rem;
+    margin-bottom: 1.25rem;
+
+    small {
+      margin-left: auto;
+      color: #777;
+      font-size: 0.6875rem;
+      text-align: right;
+      line-height: 1.2;
+    }
+  }
+
+  &__checkbox {
+    width: 1.5rem;
+    height: 1.5rem;
+    border: 2px solid #888;
+    flex: 0 0 auto;
+    background: #fff;
+  }
+
+
+  // Actual Google reCAPTCHA: override the legacy global 0.77 mobile transform.
+  // At 390px the full 304px widget fits within the page gutters.
+  .g-recaptcha {
+    transform: none;
+    transform-origin: left top;
+    margin: 0 0 1.25rem;
+  }
+
+  // Matches the single-column page rhythm after a successful submission.
+  &__success {
+    min-height: 16rem;
+    padding-bottom: 3rem;
+  }
+
+  @media (max-width: 359px) {
+    .g-recaptcha {
+      transform: scale(0.88);
+      margin-bottom: 0.5rem;
+    }
+  }
+
+  .form-wrapper button[type='submit'],
+  .form-wrapper button[type='button'] {
+    display: block;
+    width: 100%;
+    padding: 0.85rem 1rem;
+    border: 0;
+    border-radius: 6px;
+    background: #0089c6;
+    color: white;
+    font: inherit;
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.4;
+    cursor: pointer;
+  }
+
+  .form-wrapper button[type='button']:disabled { opacity: 1; cursor: default; }
+
+  .contact-errors { margin: 0 0 1.5rem; }
+
+  @media (max-width: 63.99em) {
+    .contact-hero {
+      display: block;
+      min-height: 0;
+    }
+
+    .form-wrapper { width: 100%; }
+    .kayto-painting { display: none; }
+  }
+
+  @media (max-width: 35em) {
+    &__content { padding-top: 3rem; padding-bottom: 3.25rem; }
+    &__intro { margin-bottom: 1.75rem; }
+    &__title.display {
+      font-size: clamp(3rem, 13.4vw, 3.625rem);
+      line-height: 1.05;
+      margin-bottom: 0.875rem;
+      letter-spacing: -0.03em;
+    }
+    &__lead { font-size: 1rem; line-height: 1.45; }
+    &__field { margin-bottom: 1.125rem; }
+    .my-contact-form textarea { min-height: 10rem; }
+  }
 }
 
+// Retain existing form error appearance for contact.php when converted later.
 .contact-errors {
-    margin: 2rem 0;
-    padding: 1rem 1.25rem;
-
-    border: 1px solid #d93025;
-    border-left: 4px solid #d93025;
-    border-radius: 6px;
-
-    background: #fff5f5;
-
-    strong {
-        display: block;
-        margin-bottom: 0.5rem;
-        color: #d93025;
-        font-weight: 600;
-    }
-
-    ul {
-        margin: 0;
-        padding-left: 1.25rem;
-    }
-
-    li {
-        color: #d93025;
-        margin-bottom: 0.25rem;
-    }
+  margin: 2rem 0;
+  padding: 1rem 1.25rem;
+  border: 1px solid #d93025;
+  border-left: 4px solid #d93025;
+  border-radius: 6px;
+  background: #fff5f5;
+  strong { display: block; margin-bottom: .5rem; color: #d93025; font-weight: 600; }
+  ul { margin: 0; padding-left: 1.25rem; }
+  li { color: #d93025; margin-bottom: .25rem; }
 }

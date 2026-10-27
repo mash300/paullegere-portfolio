@@ -111,219 +111,133 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     }
 }
 ?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Contact Form</title>
-    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | Paul Legere — Product Designer</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
   <link rel="shortcut icon" type="image/png" href="/images/favicon.png">
-    <link rel="stylesheet" href="/dist/style.css">
-    <link rel="stylesheet" href="portfolioStyles.css">
-    <!-- Add your CSS stylesheets here -->
+  <link rel="stylesheet" href="/dist/style.css">
+  <link rel="stylesheet" href="/portfolioStyles.css">
+  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 </head>
 <body>
 <header class="header">
-  <div class="overlay has-fade"></div>
-
-  <nav class="container container--pall flex flex-jc-sb flex-ai-c">
-    <a href="/" class="header__logo">
-      <!-- <img src="/images/logo_temp.png" alt="PL Design"> -->
-      <img src="/images/PLD_Icon.svg" alt="PL Design">
-    </a>
-    <a id="btnBurger" href="#" class="header__toggle  hide-for-desktop">
-      <span></span>
-      <span></span>
-      <span></span>
-    </a>
-
-    <div class="header__links hide-for-mobile">
-      <a href="index.html">Home</a>
-      <a href="/about.html">About</a>
-      <a href="/index.html#case_studies">Case Studies</a>
-      <a href="      
-">Contact</a>
-    </div>
-
-    <!-- <a href="#" class="button header__contact hide-for-mobile">Contact</a> -->
-  </nav>
-
-  <div class="header__menu has-fade">
-    <a href="index.html">Home</a>
-    <!-- <a href="index.html">Process</a> -->
-    <a href="/about.html">About</a>
-    <a href="/index.html#case_studies">Case Studies</a>
-    <a href="/contact.php">Contact</a>
-    <a href="#" style="visibility: hidden;">Link</a>
-  </div>
-</header>
-
-<section class="feature">
-  <div class="feature__content container container--pall">
-    
-  <!-- Original Contact Page heading -->
-    <!-- <div class="feature__intro">
-      <h2 class="contact-heading">
-        Contact
-      </h2>
-    </div> -->
-    
-    <!-- ================== PHP START ===================== -->
-
-    <?php if (!empty($successMessage)): ?>
-        
-        <div class="feature__intro" style="min-height: 100svh;">
-            <h2 class="contact-heading">
-                Message Sent!
-            </h2>
-            <!-- <h2>Success</h2> -->
-            <p><?php echo $successMessage; ?></p>
-        </div>
-    </div>
-</section>
-
-
-<div class="footerSection">
-<footer class="footer container container--pall flex flex-jc-sb flex-ai-c">
-  <div class="footer__logo">
-      <a href="#">
-        <img src="/images/PLD_Icon.svg" alt="logo">
-      </a>
-    </div>
-    <div class="footer__links col1">
-      <a href="/index.html">Home</a>
-      <a href="/about.html">About</a>
-    </div>
-    
-    <div class="footer__links col2">
-      <a href="/index.html#case_studies">Case Studies</a>
-
-    </div>
-
-    <div class="footer__contact col3">
-      <!-- <a href="/contact.php" class="button2">Contact</a> -->
-      <div>
-        <!-- &copy; PL Design. All Rights Reserved. -->
-        <a href="mailto:info@paullegere.net" target="_blank" style="padding-right: 10px;">
-          <img src="/images/email_icon_2.svg" alt="info@paullegere.net">
-      </a>
-        <a href="https://www.linkedin.com/in/paul-legere/" target="_blank">
-          <img src="/images/linkedin_logo_inline.svg" alt="Paul legere on LinkedIn">
-      </a>      
-      </div>
-
-    </div>
-  </footer> 
+<div class="overlay has-fade"></div>
+<nav class="container container--pall flex flex-jc-sb flex-ai-c">
+<a class="header__logo" href="/">
+<!-- <img src="/images/logo_temp.png" alt="PL Design"> -->
+<img alt="PL Design" src="/images/PLD_Icon.svg"/>
+</a>
+<a class="header__toggle hide-for-desktop" href="#" id="btnBurger">
+<span></span>
+<span></span>
+<span></span>
+</a>
+<div class="header__links hide-for-mobile">
+<a href="index.html">Home</a>
+<a href="/about.html">About</a>
+<a href="/index.html#case_studies">Case Studies</a>
+<a href="/contact.php" aria-current="page">Contact</a>
 </div>
-
-    <script src="/app/js/script.js"></script>
+</nav>
+<div class="header__menu has-fade">
+<a href="index.html">Home</a>
+<!-- <a href="index.html">Process</a> -->
+<a href="/about.html">About</a>
+<a href="/index.html#case_studies">Case Studies</a>
+<a href="/contact.php">Contact</a>
+<a href="#" style="visibility: hidden;">Link</a>
+</div>
+</header>
+<main class="contact-page">
+  <section class="contact-page__content container container--pall" aria-labelledby="contact-title">
+    <?php if (!empty($successMessage)): ?>
+      <div class="contact-page__success" role="status">
+        <h1 class="display contact-page__title" id="contact-title">Message Sent!</h1>
+        <p class="contact-page__lead"><?php echo htmlspecialchars($successMessage, ENT_QUOTES, 'UTF-8'); ?></p>
+      </div>
     <?php else: ?>
-        <!-- <h2>Contact</h2> -->
-        <section class="feature">
-        <div>
-
-        <div class="feature__intro">
-            <h2 class="display">
-                Get in Touch
-            </h2>
-            <!-- <h3>Get in Touch</h3> -->
-            <p class="contact-v2__lead">
-              Have a role, project, or collaboration in mind? I’d love to hear from you.
-            </p>
-            <p class="contact-v2__meta">
-              Based in Nova Scotia, open to remote opportunities across Canada and beyond.
-            </p>
-        </div>
-        
-        <!-- Form verification error messages to user - form validation feedback -->
-        <?php if (!empty($errors)): ?>
-          <div class="contact-errors">
-              <strong>Please correct the following:</strong>
-              <ul>
-                  <?php foreach ($errors as $error): ?>
-                      <li><?php echo htmlspecialchars($error); ?></li>
-                  <?php endforeach; ?>
-              </ul>
-          </div>
-        <?php endif; ?>
-
-
-        <div class="contact-hero">
-            <div class="form-wrapper">
-                <div class="my-contact-form">
-                    <form class="fcf-form-class" action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>" method="post">
-                        <label for="name">Name:</label>
-                        <input type="text" id="name" name="name" required value="<?php echo isset($name) ? htmlspecialchars($name) : ''; ?>"><br><br>
-                        
-                        <label for="email">Email:</label>
-                        <input type="email" id="email" name="email" required value="<?php echo isset($email) ? htmlspecialchars($email) : ''; ?>"><br><br>
-                        
-                        <label for="message">Message:</label>
-                        <textarea id="message" name="message" required><?php echo isset($message) ? htmlspecialchars($message) : ''; ?></textarea><br><br>
-                        
-                        <div class="g-recaptcha" data-sitekey="6LdAtRUtAAAAAPlG9SKKn440p3ZQ9zPR6KKC8uaF"></div><br>
-                        
-                        <!-- <button type="submit" value="Submit"> -->
-                        <div class="fcf-form-group">
-                        <button type="submit" id="fcf-button" value="Submit" class="fcf-btn fcf-btn-primary fcf-btn-lg fcf-btn-block">Send</button>
-                    </div>
-                    </form>
-                </div>
+    <div class="contact-page__intro">
+      <h1 class="display contact-page__title" id="contact-title">Get in Touch</h1>
+      <p class="contact-page__lead">Have a role or project in mind? I’d love to hear from you.</p>
+    </div>
+    <?php if (!empty($errors)): ?>
+      <div class="contact-errors" role="alert">
+        <strong>Please correct the following:</strong>
+        <ul>
+          <?php foreach ($errors as $error): ?>
+            <li><?php echo htmlspecialchars($error, ENT_QUOTES, 'UTF-8'); ?></li>
+          <?php endforeach; ?>
+        </ul>
+      </div>
+    <?php endif; ?>
+    <div class="contact-hero">
+      <div class="form-wrapper">
+        <div class="my-contact-form">
+          <form class="fcf-form-class" action="<?php echo htmlspecialchars($_SERVER['PHP_SELF'], ENT_QUOTES, 'UTF-8'); ?>" method="post">
+            <div class="contact-page__field">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" autocomplete="name" required value="<?php echo htmlspecialchars($name, ENT_QUOTES, 'UTF-8'); ?>">
             </div>
-            <div class="kayto-painting"></div>
-            <div class="contact-block">
+            <div class="contact-page__field">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" autocomplete="email" required value="<?php echo htmlspecialchars($email, ENT_QUOTES, 'UTF-8'); ?>">
             </div>
+            <div class="contact-page__field">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" required><?php echo htmlspecialchars($message, ENT_QUOTES, 'UTF-8'); ?></textarea>
+            </div>
+            <div class="g-recaptcha" data-sitekey="6LdAtRUtAAAAAPlG9SKKn440p3ZQ9zPR6KKC8uaF"></div>
+            <div class="fcf-form-group">
+              <button type="submit" id="fcf-button" value="Submit" class="fcf-btn fcf-btn-primary fcf-btn-lg fcf-btn-block">Send</button>
+            </div>
+          </form>
         </div>
-        </div>
-        </div>
-</section>
-<!-- <a href="#" class="attribution">Copyright Paul Legere 2021</a> -->
+      </div>
+      <div class="kayto-painting" role="img" aria-label="Illustration of Kato the cat"></div>
+    </div>
+    <?php endif; ?>
+  </section>
+</main>
 <div class="footerSection">
 <footer class="footer container container--pall flex flex-jc-sb flex-ai-c">
-  <div class="footer__logo">
-      <a href="#">
-        <img src="/images/PLD_Icon.svg" alt="logo">
-      </a>
-    </div>
-    <div class="footer__links col1">
-      <a href="index.html">Home</a>
-      <a href="/about.html">About</a>
-    </div>
-    
-    <div class="footer__links col2">
-      <a href="/index.html#case_studies">Case Studies</a>
-
-    </div>
-
-    <div class="footer__contact col3">
-      <!-- <a href="/contact.php" class="button2">Contact</a> -->
-      <div>
-        <!-- &copy; PL Design. All Rights Reserved. -->
-        <a href="mailto:info@paullegere.net" target="_blank" style="padding-right: 10px;">
-          <img src="/images/email_icon_2.svg" alt="info@paullegere.net">
-      </a>
-        <a href="https://www.linkedin.com/in/paul-legere/" target="_blank">
-          <img src="/images/linkedin_logo_inline.svg" alt="Paul legere on LinkedIn">
-      </a>      
-      </div>
-      <!-- <div class="footer_copyright">
-        <a href="https://www.linkedin.com/in/paul-legere/" target="_blank">
+<div class="footer__logo">
+<a href="/">
+<img alt="logo" src="/images/PLD_Icon.svg"/>
+</a>
+</div>
+<div class="footer__links col1">
+<a href="/index.html">Home</a>
+<a href="/about.html">About</a>
+</div>
+<div class="footer__links col2">
+<a href="/index.html#case_studies">Case Studies</a>
+</div>
+<div class="footer__contact col3">
+<!-- <a href="/contact.php" class="button2">Contact</a> -->
+<div>
+<!-- &copy; PL Design. All Rights Reserved. -->
+<a href="/contact.php" style="padding-right: 10px;">
+<img alt="info@paullegere.net" src="/images/email_icon_2.svg"/>
+</a>
+<a href="https://www.linkedin.com/in/paul-legere/" target="_blank" rel="noopener noreferrer">
+<img alt="Paul legere on LinkedIn" src="/images/linkedin_logo_inline.svg"/>
+</a>
+</div>
+<!-- <div class="footer_copyright">
+        <a href="https://www.linkedin.com/in/paul-legere/" target="_blank" rel="noopener noreferrer">
           <img src="/images/linkedin_logo_inline.svg" alt="Paul legere on LinkedIn">
         </a>
       </div> -->
-      <!-- &copy; PL Design. All Rights Reserved. -->
-    </div>
-  </footer> 
+<!-- &copy; PL Design. All Rights Reserved. -->
 </div>
-    <script src="/app/js/script.js"></script>
-
-    <?php endif; ?>
-    <!-- Add your JavaScript scripts here -->
-
+</footer>
+</div>
+<script src="/app/js/script.js"></script>
 </body>
 </html>
