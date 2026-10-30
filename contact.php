@@ -205,38 +205,31 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
   </section>
 </main>
 <div class="footerSection">
-<footer class="footer container container--pall flex flex-jc-sb flex-ai-c">
-<div class="footer__logo">
-<a href="/">
-<img alt="logo" src="/images/PLD_Icon.svg"/>
-</a>
-</div>
-<div class="footer__links col1">
-<a href="/index.html">Home</a>
-<a href="/about.html">About</a>
-</div>
-<div class="footer__links col2">
-<a href="/index.html#case_studies">Case Studies</a>
-</div>
-<div class="footer__contact col3">
-<!-- <a href="/contact.php" class="button2">Contact</a> -->
-<div>
-<!-- &copy; PL Design. All Rights Reserved. -->
-<a href="/contact.php" style="padding-right: 10px;">
-<img alt="info@paullegere.net" src="/images/email_icon_2.svg"/>
-</a>
-<a href="https://www.linkedin.com/in/paul-legere/" target="_blank" rel="noopener noreferrer">
-<img alt="Paul legere on LinkedIn" src="/images/linkedin_logo_inline.svg"/>
-</a>
-</div>
-<!-- <div class="footer_copyright">
-        <a href="https://www.linkedin.com/in/paul-legere/" target="_blank" rel="noopener noreferrer">
-          <img src="/images/linkedin_logo_inline.svg" alt="Paul legere on LinkedIn">
-        </a>
-      </div> -->
-<!-- &copy; PL Design. All Rights Reserved. -->
-</div>
-</footer>
+  <footer class="footer container container--pall">
+
+    <div class="footer__logo">
+      <a href="/">
+        <img src="/images/PLD_Icon.svg" alt="PL Design">
+      </a>
+    </div>
+
+    <nav class="footer__links" aria-label="Footer navigation">
+      <a href="/index.html">Home</a>
+      <a href="/about.html">About</a>
+      <a href="/index.html#case_studies">Case Studies</a>
+      <a href="/contact.php">Contact</a>
+    </nav>
+
+    <div class="footer__contact">
+      <a href="https://www.linkedin.com/in/paul-legere/"
+         target="_blank"
+         rel="noopener noreferrer"
+         aria-label="Paul Legere on LinkedIn">
+        <img src="/images/linkedin_logo_inline.svg" alt="">
+      </a>
+    </div>
+
+  </footer>
 </div>
 <script src="/app/js/script.js"></script>
 </body>
