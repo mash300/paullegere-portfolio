@@ -688,6 +688,39 @@ a, a:visited, a:hover {
   white-space: nowrap;
 }
 
+/* ==========================================
+   HOMEPAGE HERO - TYPOGRAPHY
+   ========================================== */
+.home-page .hero__role {
+  font-size: clamp(1.625rem, 2vw, 1.875rem);
+  font-weight: 600;
+  line-height: 1.3;
+}
+.home-page .hero__summary {
+  font-size: clamp(1.125rem, 1.4vw, 1.25rem);
+  font-weight: 500;
+  line-height: 1.5;
+  color: #1d2939;
+  max-width: 43ch;
+}
+
+.case-study-hero--vw .case-study-hero__visual img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 4/3;
+  object-fit: cover;
+  object-position: center 40%;
+  border-radius: 10px;
+}
+.case-study-hero--vw .case-study-hero__caption {
+  font-size: 0.8125rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #667085;
+  margin-top: 0.75rem;
+  text-align: left;
+}
+
 .about-page {
   flex: 1;
   background-color: hsl(0, 0%, 98%);
@@ -788,6 +821,33 @@ a, a:visited, a:hover {
     margin: 2rem auto 0;
   }
 }
+/* ==========================================
+   ABOUT PAGE - PROFILE PHOTOGRAPH
+   ========================================== */
+.about-page__aside .about-page__photo {
+  width: 82%;
+  height: auto;
+  min-height: 0;
+  aspect-ratio: 4/5;
+  margin-inline: auto;
+  background-size: cover;
+  background-position: center top;
+}
+
+@media (max-width: 767px) {
+  .about-page__aside .about-page__photo {
+    width: min(100%, 320px);
+    margin-inline: auto;
+  }
+}
+/* ==========================================
+   ABOUT PAGE - BODY TEXT READABILITY
+   ========================================== */
+.about-page__text > p {
+  color: #475467;
+  line-height: 1.65;
+}
+
 .heroPortfolio {
   background-color: hsl(0, 0%, 24%);
 }
@@ -1359,6 +1419,85 @@ a, a:visited, a:hover {
     display: none;
   }
 }
+/* Only the BI Case Study - overview's opening statement. */
+.case-study-overview .bi-overview__lead {
+  font-size: clamp(1.25rem, 1.6vw, 1.5rem);
+  font-weight: 600;
+  line-height: 1.45;
+  letter-spacing: -0.015em;
+  color: #1d2939;
+  margin-top: 0;
+  margin-bottom: 1.5rem;
+}
+
+.bi-colour-identification {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1.15fr);
+  align-items: center;
+  gap: clamp(1.5rem, 3.5vw, 3rem);
+  margin: 2rem 0 3rem;
+  padding: 2rem 0;
+  border-top: 1px solid #e4e7ec;
+}
+
+.bi-colour-identification__copy p {
+  line-height: 1.65;
+  margin: 0 0 1rem;
+}
+
+.bi-colour-identification__copy p:last-child {
+  margin-bottom: 0;
+}
+
+.bi-colour-identification__figure {
+  margin: 0;
+  min-width: 0;
+}
+
+.bi-colour-identification__figure a {
+  display: block;
+}
+
+.bi-colour-identification__figure img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 8px 24px rgba(16, 24, 40, 0.1);
+}
+
+.bi-colour-identification__figure figcaption {
+  font-size: 0.875rem;
+  line-height: 1.5;
+  color: #667085;
+  margin-top: 0.65rem;
+}
+
+@media (max-width: 768px) {
+  .bi-colour-identification {
+    grid-template-columns: 1fr;
+  }
+}
+/* ==========================================
+   VW SPOILER CASE STUDY
+   Project Overview Typography
+   ========================================== */
+.vw-spoiler-case-study .vw-overview__lead {
+  font-size: clamp(1.1875rem, 1.5vw, 1.375rem);
+  font-weight: 600;
+  line-height: 1.5;
+  color: #1d2939;
+  margin-top: 0;
+  margin-bottom: 1.125rem;
+}
+.vw-spoiler-case-study .vw-overview p:not(.vw-overview__lead) {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.65;
+  color: #475467;
+  margin-bottom: 0.875rem;
+}
+
 .footerSection {
   background-color: hsl(230, 15.32%, 18.98%);
 }

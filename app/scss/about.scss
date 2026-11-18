@@ -108,3 +108,49 @@
     margin: 2rem auto 0;
   }
 }
+
+/* ==========================================
+   ABOUT PAGE - PROFILE PHOTOGRAPH
+   ========================================== */
+
+.about-page {
+
+  &__aside {
+
+    .about-page__photo {
+      width: 82%;
+      height: auto;
+      min-height: 0;
+      aspect-ratio: 4 / 5;
+
+      margin-inline: auto;
+
+      background-size: cover;
+      background-position: center top;
+    }
+
+  }
+
+}
+
+@media (max-width: 767px) {
+  .about-page__aside .about-page__photo {
+    width: min(100%, 320px);
+    margin-inline: auto;
+  }
+}
+
+
+/* ==========================================
+   ABOUT PAGE - BODY TEXT READABILITY
+   ========================================== */
+
+.about-page {
+  &__text {
+    > p {
+      color: #475467;
+      line-height: 1.65;
+    }
+  }
+}
+

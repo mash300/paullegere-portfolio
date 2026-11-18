@@ -73,22 +73,34 @@
       <h1>Brewers Insight</h1>
 
       <p class="case-study-hero__summary">
-        Designing a production planning system for
-        brewery operations, connecting scheduling,
-        batch management, and forecasting within
-        a unified workflow.
+        Defining the UX for a brewery production planner
+        by mapping schedules, batch lifecycles, equipment
+        constraints, and edge cases into a coherent MVP.
       </p>
 
     </div>
-
-    <div class="case-study-hero__visual">
+<!-- OLD -->
+    <!-- <div class="case-study-hero__visual">
       <img
         src="/images/BI_Planner_UI.png"
-        alt="Brew Planner interface concept showing brewery production scheduling"
+        alt="Brew Planner interface showing a production timeline and batch settings panel"
         fetchpriority="high"
       >
-    </div>
+    </div> -->
+<!-- NEW -->
+<div class="case-study-hero__visual">
+  <img
+    src="/images/BI_Planner_UI.png"
+    alt="Refined visual concept of the Brew Planner interface showing brewery production scheduling"
+    fetchpriority="high"
+  >
 
+  <p class="case-study-hero__caption">
+    Refined visual exploration of the Brew Planner,
+    demonstrating an alternative UI treatment of
+    the original MVP concept.
+  </p>
+</div>
   </div>
 </section>
 <!-- <a href="#" class="attribution">Copyright Paul Legere 2021</a> -->
@@ -115,28 +127,30 @@
             <br>Roles
           </div>
           <div class="feature__description">
-            Product Design
+            UX Research &amp; Competitive Analysis
             <br>
-            Information Architecture
+            Workflow Design &amp; Information Architecture
             <br>
-            UX Research
+            MVP Planning &amp; Requirements
             <br>
-            Systems Thinking
+            Interaction Flows &amp; Edge Cases
             <br>
-            Feature Concept Development
+            Early Concepts &amp; Wireframes
           </div>
         </div>
         <div class="verticalBar">  
         </div>
         <div class="feature__intro">
             <br>
-            <p class="intro">
-              Designing a production planning system for brewery operations, including scheduling, batch management, and forecasting.
+            <p class="bi-overview__lead">
+              A scheduling feature became a systems-design challenge: how should brewers plan work when batches, equipment, and production stages depend on one another?
             </p>
             <p>
-                Brewers Insight is brewery management software used to plan and track production operations. I was brought in to research and define an MVP for a new Brew Planner feature, including a timeline-based concept for coordinating brewing, conditioning, and packaging activities.
+                Brewers Insight is software for planning and tracking brewery production. I independently owned the early UX research and planning for a new Brew Planner MVP: researching comparable products, mapping operational workflows, and defining how scheduling, batch configuration, transfers, and exceptions should behave.
                 <br><br>
-                What began as a feature request evolved into designing a subsystem that integrated deeply with existing production data and workflows.
+                I was the sole product and UX designer on the project. My deliverables included research, system and user-flow diagrams, early sketches, interaction rules, and conceptual mockups. Devin developed the interface using my concepts and documentation. I did <strong>not</strong> design the final visual interface or write the production application code.
+                <br><br>
+                The work expanded beyond a timeline view because a change in one part of the production schedule could affect equipment availability and downstream processes.
             </p>
         </div>
       </div>
@@ -156,7 +170,7 @@
       alt="Original Brew Planner MVP concept with batch configuration sidebar"
       loading="lazy">
       <div class="imgDesc">
-        <p>Original MVP concept showing the planner and batch-configuration sidebar.</p>
+        <p>Early Brew Planner concept showing the production timeline and batch-configuration sidebar. Included to illustrate the UX planning, not to claim final UI design.</p>
       </div>
     </div>
     </div>
@@ -192,7 +206,7 @@
               The platform lacked a centralized way to visualize production schedules across tanks, batches, and timelines. Planning was fragmented, increasing the risk of scheduling conflicts and operational downtime.
             </p>
             <p>
-              The challenge was structural clarity rather than surface polish.
+              The core challenge was defining predictable behavior across interconnected workflows, not simply arranging a scheduling screen.
             </p>
             <p>
               The planner needed to:
@@ -215,15 +229,15 @@
           <div class="feature__description">
             <h4>System Mapping</h4>
             <p>
-              Mapped real-world brewery production stages into structured digital workflows, identifying dependencies and constraints.
+              Mapped how recipes, brewhouse turns, conditioning, equipment assignments, transfers, and packaging fit together across time. These dependencies shaped what the planner needed to show and when.
             </p>
             <h4>Interface Structure</h4>
             <p>
-              Designed timeline-based planning logic, hierarchical data visibility, and visual conflict indicators.
+              Defined timeline interactions, sidebar configuration flows, and the decision points users would encounter when editing a plan. For example, changing a brew-turn date could trigger conflicts that needed to be surfaced before changes were applied.
             </p>
             <h4>Implementation Awareness</h4>
             <p>
-              Although the deliverables were conceptual mockups and system diagrams, the designs were developed with technical feasibility in mind. The feature was built by engineering and remains in use within the live product.
+              I documented the intended interactions and requirements with existing production data and technical feasibility in mind. Devin subsequently built the interface based on my UX concepts. The final visual UI and application code were outside my scope.
             </p>
           </div>
         </div>
@@ -234,10 +248,10 @@
           <div class="feature__description">
             <br>
             <ul>
-              <li>Introduced structured production planning capability</li>
-              <li>Expanded product positioning beyond basic tracking</li>
-              <li>Increased operational visibility for users</li>
-              <li>Established scalable groundwork for future planning tools</li>
+              <li>Defined an MVP framework for a production-planning feature that did not previously exist</li>
+              <li>Documented interconnected workflows and exceptional states for development</li>
+              <li>Connected the planning concept to existing recipes, production stages, and equipment data</li>
+              <li>Devin subsequently implemented the Brew Planner interface based on my UX concepts and documentation</li>
             </ul>
           </div>
         </div>
@@ -248,10 +262,10 @@
           <div class="feature__description">
             <br>
             <ul>
-              <li>Complex features often evolve into subsystems</li>
-              <li>Early structural thinking reduces downstream friction</li>
-              <li>Implementation-aware design improves engineering collaboration</li>
-              <li>Operational tools require clarity over decoration</li>
+              <li>A small scheduling change can have consequences across an entire production plan</li>
+              <li>Edge cases and confirmation states should be part of the primary workflow, rather than added later</li>
+              <li>Clear interaction rules make complex requirements easier to discuss with engineers</li>
+              <li>Operational software needs a readable overview without hiding important dependencies</li>
             </ul>
           </div>
         </div>
@@ -281,7 +295,7 @@
       <br>
     </div>
     <div class="BI_ideation container container--sides">
-      <img src="/images/BI_ideation.jpg">
+      <img src="/images/BI_ideation.jpg" alt="Collection of exploratory sketches for Brew Planner timeline and configuration concepts" loading="lazy">
       <div class="imgDesc">
         <p>Early sketches exploring potential structures for a production planning interface and identifying the components required to support brewery workflows.</p>
       </div>
@@ -307,7 +321,7 @@
     </div>
     <div class="feature__intro">
       <p>
-        Designing the planning module required mapping a large system of interconnected workflows. These flows illustrate how brewers create production batches, configure fermentation and packaging stages, split batches across outputs, and forecast ingredient demand based on upcoming production.
+        Rather than treating the planner as a set of isolated screens, I mapped the actions and dependencies between creating batches, adjusting brew dates, allocating conditioning volumes, and reviewing historical production. I also explored the related Forecasting Report as a separate workflow connected to the same production context.
       </p>
       <br>
     </div>
@@ -315,10 +329,10 @@
       <div class="feature__title">
         System Workflow Overview
       </div>
-      <img src="/images/BI_wframes.jpg">
+      <img src="/images/BI_wframes.jpg" alt="Overview of interconnected Brew Planner user-flow diagrams" loading="lazy">
       <div class="imgDesc">
         <p>
-          System map of the workflows supporting production planning, reporting, batch configuration, batch splitting and forecasting.
+          Overview of the documented interactions across planning, batch configuration, transfers, reporting, and forecasting. The detailed examples below explain why particular decisions mattered.
         </p>
         <br>
       </div>
@@ -337,7 +351,7 @@
     </div>
     <div class="feature__intro">
       <p>
-        The following flows highlight several core operational tasks supported by the planner.
+        These examples show the decisions behind the flows: the operational need, the constraint or edge case, and the behavior I proposed in the MVP documentation. They are UX planning artifacts, not claims of authorship over the final production UI.
       </p>
       <br>
     </div>
@@ -346,46 +360,95 @@
       <div class="feature__title">
         Creating a Production Batch
       </div>
-      <img src="/images/BI_planner_new_batch_revised.jpg">
+      <img src="/images/BI_planner_new_batch_revised.jpg" alt="Annotated flow for creating and configuring a new production batch" loading="lazy">
         <div class="feature__intro" style="margin: 0; padding: 0;">
           <br>
           <p>
-            Brewers initiate a new production batch directly within the planner timeline. Recipes stored in the system provide predefined ingredient requirements and process stages, allowing batches to be created quickly while maintaining consistency across production runs.
+            <strong>Design challenge:</strong> Make it possible to plan a new batch without making the brewer re-enter information already held in the system. The flow begins from the timeline, uses the selected recipe as a starting point, and exposes the production stages that need configuration.
           </p>
           <p>
-            The configuration panel allows brewers to define fermentation, conditioning and packaging stages before committing the batch to the production schedule.
+            <strong>UX decision:</strong> Keep the batch setup in a contextual sidebar so brewers can configure brewing, conditioning, and packaging while retaining sight of the schedule. The interaction must connect a local edit to the broader production plan.
           </p>
         </div>
         <br>
     </div>
     <div class="BI_hero container container--sides case-study-section">
       <div class="feature__title">
+        Handling Scheduling Conflicts
+      </div>
+      <div class="feature__intro" style="margin: 0; padding: 0;">
+        <p>
+          <strong>Edge case:</strong> In the documented Mosaic IPA scenario, two brewhouse turns initially occur on the same start date. Moving the second turn to the following day extends the production timeline and can conflict with other planned work.
+        </p>
+        <p>
+          <strong>UX decision:</strong> The flow presents the consequences before applying a change. A confirmation gives the brewer a choice: allow the system to adjust affected plans or keep control and select dates manually. This illustrates why a scheduling edit cannot be treated as an isolated form update.
+        </p>
+      </div>
+      <br>
+    </div>
+    <div class="BI_hero container container--sides case-study-section">
+      <div class="feature__title">
         Splitting Fermentation into Packaging Runs
       </div>
-      <img src="/images/BI_planner_batch_splitting.jpg">
+      <img src="/images/BI_planner_batch_splitting.jpg" alt="Annotated flow for splitting a conditioning batch into multiple tank transfers" loading="lazy">
         <div class="feature__intro" style="margin: 0; padding: 0;">
           <br>
           <p>
-            After fermentation, batches can be divided across multiple conditioning tanks or packaging outputs. The batch splitting workflow allows brewers to allocate volumes, configure transfers and manage packaging formats while maintaining visibility of total batch quantities.
+            <strong>Design challenge:</strong> A batch might need to be divided among conditioning tanks or later outputs, while still accounting for its original volume. The flow makes the total volume and unit of measurement visible as the brewer creates additional transfers.
           </p>
           <p>
-            This flexibility enables breweries to adapt packaging plans without disrupting upstream production scheduling.
+            <strong>UX decision:</strong> Each transfer has a destination, timing, and quantity. Adding transfers creates separate scheduled processes; deleting a transfer requires confirmation, with its allocated volume returned to the starting total. That guards against losing track of material when plans change.
           </p>
         </div>
         <br>
+    </div>
+    <div class="BI_hero container container--sides case-study-section">
+      <div class="feature__title">
+        Reviewing Historical Brews
+      </div>
+      <div class="feature__intro" style="margin: 0; padding: 0;">
+        <p>
+          <strong>Edge case:</strong> Past brew runs need to remain visible as operational reference without appearing editable like upcoming work. In the flow, historical processes are greyed out and treated as read-only.
+        </p>
+        <p>
+          <strong>UX decision:</strong> Selecting a historical process offers contextual details and a path to a Brew Run History report, rather than controls for changing a completed run. The distinction helps preserve the meaning of historical records within the same planner view.
+        </p>
+      </div>
+      <br>
+    </div>
+    <!-- Supporting UX detail, taken from the revised colour picker concept flow. -->
+    <div class="bi-colour-identification case-study-section">
+      <div class="bi-colour-identification__copy">
+        <h3 class="feature__title">Visual Identification Through Colour</h3>
+        <p>
+          <strong>Design goal:</strong> Help operators recognize a brew at a glance in a busy production schedule. I explored assigning a consistent colour to each brew run, reflecting colours already associated with a brewery's products, such as red for an Irish Red, blue for Mosaic IPA, or brown for a chocolate stout.
+        </p>
+        <p>
+          <strong>Interaction detail:</strong> The colour picker let an operator preview a selection, use saved swatches or a custom hex value, and then apply or cancel the change. When applied, the chosen colour carried through the brew's planner processes and associated sidebar sections. This kept the same visual reference as the user moved between the timeline and batch details.
+        </p>
+        <p>
+          <strong>UX consideration:</strong> Colour was intended to support recognition, not replace labels. Brew names and process information remained visible. I treated this as a secondary usability improvement rather than a requirement for the core scheduling workflow.
+        </p>
+      </div>
+      <figure class="bi-colour-identification__figure">
+        <a href="/images/BI_colour_picker_full_flow.png" target="_blank" rel="noopener noreferrer" aria-label="View the complete four-stage colour picker workflow at full size">
+          <img src="/images/BI_colour_picker_preview.png" alt="UX concept showing a mint-green colour selected for Mosaic IPA, with the colour previewed across the timeline, brew header and process panels before confirmation" loading="lazy" width="1740" height="1241">
+        </a>
+        <figcaption>The selected colour previews across the planner and brew sidebar before confirmation. Select the image to inspect the complete four-stage flow.</figcaption>
+      </figure>
     </div>
     <div class="BI_hero container container--sides">
       <div class="feature__title">
         Forecasting Material Demand
       </div>
-      <img src="/images/BI_forecasting.jpg">
+      <img src="/images/BI_forecasting.jpg" alt="Annotated UX flow for the separate Forecasting Report and its filters" loading="lazy">
         <div class="feature__intro" style="margin: 0; padding: 0;">
           <br>
           <p>
-            Production schedules automatically generate projected ingredient demand based on recipe requirements and upcoming batches.
+            <strong>Connected but separate:</strong> The Forecasting Report is not another Brew Planner screen. It is a related reporting workflow that uses planned production and recipe information to explore expected material requirements.
           </p>
           <p>
-            Brewers can filter forecasts by time range, ingredient category or supplier to identify shortages early and support purchasing and inventory planning.
+            <strong>UX decision:</strong> I mapped filtering by date range, recipe, material grouping, category, and supplier, along with options to focus on shortages and export results. The challenge was making a large set of reporting choices understandable without obscuring the purchasing decisions they support.
           </p>
         </div>
         <br>
@@ -402,13 +465,13 @@
                 <hr>
                 <br>
                 <p>
-                  This project combined several of my interests in production systems and operational software design. Designing a planning interface for brewery operations required understanding how real-world production stages interact across time, equipment and scheduling constraints.
+                  Brew Planner did not exist when I joined. I worked independently as the project's sole product and UX designer, researching the operational problem, defining the MVP direction, and documenting the workflows, dependencies, and edge cases. The project also involved the founder, a production manager, and Devin, the developer who built the interface based on my concepts.
                 </p>
                 <p>
-                  The Brew Planner feature did not yet exist when I joined the project. My contribution focused on researching competing products, mapping brewery workflows and dependencies, and defining the MVP framework, requirements, and early concepts needed to guide later development.
+                  The most revealing problems were not the obvious ones. Moving one brewhouse turn could disrupt other plans. Splitting a conditioning volume introduced accounting and deletion rules. Historical records needed to stay accessible without being confused with editable work. These decisions shaped how the system should behave, not just how it should look.
                 </p>
                 <p>
-                  One key takeaway was the importance of designing operational tools around real processes rather than individual screens. Production environments benefit from interfaces that reveal complexity gradually while maintaining a clear overview of schedules and resource usage.
+                  I came away with a stronger appreciation for designing around real operational processes, communicating interaction rules clearly, and considering engineering constraints early. For complex products, a useful interface depends on understanding what happens before, during, and after each user action.
                 </p>
           </div>
       </div>
